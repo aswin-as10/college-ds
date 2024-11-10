@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int temp,i,j,n,A[50];
+    int temp,i,j,key,n,A[50];
     printf("\nenter the size of array");
     scanf("%d",&n);
     printf("\nenter the elements:");
@@ -26,4 +26,19 @@ int main(){
         printf("\t%d",A[i]);
     }
     printf("]");
+    printf("\nenter element to search");
+    scanf("%d",&key);
+    for(i=0;i<n;i++){
+        if(A[i]==key){
+            flag=1;
+            break;
+        }
+        
+    }
+    if(flag==1){
+        printf("\nelement found at pos %d",i+1);
+    }
+    else{
+        printf("\element not found");
+    }
 }
