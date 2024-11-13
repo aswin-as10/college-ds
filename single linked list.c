@@ -100,7 +100,7 @@ int deleteanode(int key){
     if(head->data==key){                          //if search data is first node
         struct node*temp=head;
         printf("\ndeleted element is %d",temp->data); 
-      head=head->data;
+      head=head->next;
         free(temp);
         return 1;
   }
@@ -192,3 +192,4 @@ int main(){
                 
           }
     }
+}
